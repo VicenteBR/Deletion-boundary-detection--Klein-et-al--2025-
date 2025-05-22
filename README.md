@@ -1,0 +1,1 @@
+Scripts utilized to identify, map, and quantify deletion boundaries for the publication "Engineered Type IV-A and Type I-Fv CRISPR-Cas effectors function in reduction of the _Escherichia coli_ genome (Klein et al, 2025)."
