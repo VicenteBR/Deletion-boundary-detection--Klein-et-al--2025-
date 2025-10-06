@@ -48,25 +48,32 @@ python detect_junctions.py \
 
 ## Arguments
 --bamdir
+
 Directory containing one or more *.bam files (each must have a .bai index in the same directory).
 
 --outdir
+
 Output directory (created if it does not exist).
 
 --gff
+
 GFF3 annotation. The script reads seqid, start, end, attributes and looks inside attributes for locus_tag= or gene= to annotate Left Feature/Right Feature.
 
 --fasta
+
 Reference FASTA (must have .fai index).
 
 --region
+
 Genomic window of interest in the form chrom:start-end.
 Junctions are included if either the start or the end falls inside this window.
 
 --tol (default: 3)
+
 Clustering tolerance in nucleotides for both junction start and end. Junctions within ±tol bp of a cluster’s mean start and end are merged.
 
 --flank (default: 50)
+
 Number of nucleotides to extract upstream (left) and downstream (right) around the start and end sites for FASTA outputs.
 
 ### Generated outputs per BAM files
