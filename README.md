@@ -1,5 +1,6 @@
 Scripts utilized to identify, map, and quantify deletion boundaries for the publication "Engineered Type IV-A and Type I-Fv CRISPR-Cas effectors function in reduction of the _Escherichia coli_ genome (Klein et al, 2025)."
 
+### SPLICED ALIGNMENTS FILTERING
 ### splice_extractor.sh
 Given one or more BAM files in the current directory, the script:
 - Keeps only spliced alignments (CIGAR = N)
@@ -12,8 +13,8 @@ Given one or more BAM files in the current directory, the script:
 - samtools >= 1.1
 - awk
 
-
-### detect_junctions.py - README
+### JUNCTION DETECTION
+### detect_junctions.py
 Given one or more coordinate-sorted, indexed BAMs, a reference FASTA, and a GFF3 annotation, the script:
 - Detects splice/skipped-region junctions from each BAM (CIGAR N operations).
 - Clusters nearly identical junctions using a user-defined tolerance (in bp).
